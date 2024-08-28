@@ -1,0 +1,95 @@
+.container {
+  width: 700px;
+  padding: 10px;
+  background-color: #1b1b1b;
+  border-radius: 10px;
+  margin: 20px auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 68px;
+
+  transition: height 0.3s ease, padding 0.3s ease;
+}
+
+.expandedContainer {
+  @extend .container;
+  height: 230px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+
+.textAreaContainer {
+  position: relative;
+  display: flex;
+}
+
+.emojiIcon {
+
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  right: 16px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.emojiIcon:hover {
+  background-color: #5c5959;
+}
+
+.avatarIcon {
+  margin-right: 8px;
+  margin-top: 4px;
+}
+
+.textArea {
+  width: 100%;
+  height: 46px;
+  max-height: 200px;
+  overflow-y: auto;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: #4d4a4a;
+  color: white;
+  font-size: 16px;
+  resize: none;
+  padding: 14px;
+  font-family: 'Arial', sans-serif;
+  transition: height 0.3s ease;
+}
+
+.expandedContainer .textArea {
+  height: 150px;
+}
+
+.iconsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.expandedContainer .iconsContainer {
+  opacity: 1;
+}
+
+
+
+.emojiPicker {
+  position: absolute;
+  bottom: -448px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.containericons {
+  margin-left: 40px;
+}

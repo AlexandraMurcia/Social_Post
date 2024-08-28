@@ -1,0 +1,31 @@
+{
+  "name": "post-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "cropperjs": "^1.6.2",
+    "emoji-mart": "^5.6.0",
+    "emoji-picker-react": "^4.11.1",
+    "next": "14.2.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-easy-crop": "^5.0.8",
+    "react-icons": "^5.3.0",
+    "react-image-crop": "^11.0.6",
+    "react-input-emoji": "^5.9.0",
+    "react-modal": "^3.16.1",
+    "react-mosaic": "^0.0.20",
+    "react-photo-collage": "^1.0.9",
+    "sass": "^1.77.8"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.6"
+  }
+}
